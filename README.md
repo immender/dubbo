@@ -1,18 +1,10 @@
 # Apache Dubbo Project
 
-[![Build Status](https://travis-ci.org/apache/dubbo.svg?branch=master)](https://travis-ci.org/apache/dubbo)
-[![codecov](https://codecov.io/gh/apache/dubbo/branch/master/graph/badge.svg)](https://codecov.io/gh/apache/dubbo)
-![maven](https://img.shields.io/maven-central/v/org.apache.dubbo/dubbo.svg)
-![license](https://img.shields.io/github/license/alibaba/dubbo.svg)
-[![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/apache/dubbo.svg)](http://isitmaintained.com/project/apache/dubbo "Average time to resolve an issue")
-[![Percentage of issues still open](http://isitmaintained.com/badge/open/apache/dubbo.svg)](http://isitmaintained.com/project/apache/dubbo "Percentage of issues still open")
-[![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Apache%20Dubbo%20is%20a%20high-performance%2C%20java%20based%2C%20open%20source%20RPC%20framework.&url=http://dubbo.apache.org/&via=ApacheDubbo&hashtags=rpc,java,dubbo,micro-service)
-[![](https://img.shields.io/twitter/follow/ApacheDubbo.svg?label=Follow&style=social&logoWidth=0)](https://twitter.com/intent/follow?screen_name=ApacheDubbo)
-[![Gitter](https://badges.gitter.im/alibaba/dubbo.svg)](https://gitter.im/alibaba/dubbo?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+[![Build Status](https://travis-ci.org/apache/dubbo.svg?branch=master)](https://travis-ci.org/apache/dubbo) [![codecov](https://codecov.io/gh/apache/dubbo/branch/master/graph/badge.svg)](https://codecov.io/gh/apache/dubbo) ![maven](https://img.shields.io/maven-central/v/org.apache.dubbo/dubbo.svg) ![license](https://img.shields.io/github/license/alibaba/dubbo.svg) [![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/apache/dubbo.svg)](http://isitmaintained.com/project/apache/dubbo) [![Percentage of issues still open](http://isitmaintained.com/badge/open/apache/dubbo.svg)](http://isitmaintained.com/project/apache/dubbo) [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Apache%20Dubbo%20is%20a%20high-performance%2C%20java%20based%2C%20open%20source%20RPC%20framework.&url=http://dubbo.apache.org/&via=ApacheDubbo&hashtags=rpc,java,dubbo,micro-service) [![](https://img.shields.io/twitter/follow/ApacheDubbo.svg?label=Follow&style=social&logoWidth=0)](https://twitter.com/intent/follow?screen_name=ApacheDubbo) [![Gitter](https://badges.gitter.im/alibaba/dubbo.svg)](https://gitter.im/alibaba/dubbo?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
 Apache Dubbo is a high-performance, Java based open source RPC framework. Please visit [official site](http://dubbo.apache.org) for quick start and documentations, as well as [Wiki](https://github.com/apache/dubbo/wiki) for news, FAQ, and release notes.
 
-We are now collecting dubbo user info in order to help us to improve Dubbo better, pls. kindly help us by providing yours on [issue#1012: Wanted: who's using dubbo](https://github.com/apache/dubbo/issues/1012), thanks :)
+We are now collecting dubbo user info in order to help us to improve Dubbo better, pls. kindly help us by providing yours on [issue\#1012: Wanted: who's using dubbo](https://github.com/apache/dubbo/issues/1012), thanks :\)
 
 ## Architecture
 
@@ -40,11 +32,11 @@ There's a [README](https://github.com/apache/dubbo-samples/tree/master/java/dubb
 
 ### Maven dependency
 
-```xml
+```markup
 <properties>
     <dubbo.version>2.7.7</dubbo.version>
 </properties>
-    
+
 <dependencies>
     <dependency>
         <groupId>org.apache.dubbo</groupId>
@@ -70,7 +62,7 @@ public interface GreetingService {
 }
 ```
 
-*See [api/GreetingService.java](https://github.com/apache/dubbo-samples/blob/master/java/dubbo-samples-api/src/main/java/org/apache/dubbo/samples/api/GreetingsService.java) on GitHub.*
+_See_ [_api/GreetingService.java_](https://github.com/apache/dubbo-samples/blob/master/java/dubbo-samples-api/src/main/java/org/apache/dubbo/samples/api/GreetingsService.java) _on GitHub._
 
 ### Implement service interface for the provider
 
@@ -87,7 +79,7 @@ public class GreetingsServiceImpl implements GreetingsService {
 }
 ```
 
-*See [provider/GreetingServiceImpl.java](https://github.com/apache/dubbo-samples/blob/master/java/dubbo-samples-api/src/main/java/org/apache/dubbo/samples/provider/GreetingsServiceImpl.java) on GitHub.*
+_See_ [_provider/GreetingServiceImpl.java_](https://github.com/apache/dubbo-samples/blob/master/java/dubbo-samples-api/src/main/java/org/apache/dubbo/samples/provider/GreetingsServiceImpl.java) _on GitHub._
 
 ### Start service provider
 
@@ -119,7 +111,7 @@ public class Application {
 }
 ```
 
-*See [provider/Application.java](https://github.com/apache/dubbo-samples/blob/master/java/dubbo-samples-api/src/main/java/org/apache/dubbo/samples/provider/Application.java) on GitHub.*
+_See_ [_provider/Application.java_](https://github.com/apache/dubbo-samples/blob/master/java/dubbo-samples-api/src/main/java/org/apache/dubbo/samples/provider/Application.java) _on GitHub._
 
 ### Build and run the provider
 
@@ -153,7 +145,8 @@ public class Application {
     }
 }
 ```
-*See [consumer/Application.java](https://github.com/apache/dubbo-samples/blob/master/java/dubbo-samples-api/src/main/java/org/apache/dubbo/samples/client/Application.java) on GitHub.*
+
+_See_ [_consumer/Application.java_](https://github.com/apache/dubbo-samples/blob/master/java/dubbo-samples-api/src/main/java/org/apache/dubbo/samples/client/Application.java) _on GitHub._
 
 ### Build and run the consumer
 
@@ -164,7 +157,6 @@ public class Application {
 
 The consumer will print out `hi, dubbo` on the screen.
 
-
 ### Next steps
 
 * [Your first Dubbo application](http://dubbo.apache.org/en-us/blog/dubbo-101.html) - A 101 tutorial to reveal more details, with the same code above.
@@ -174,24 +166,23 @@ The consumer will print out `hi, dubbo` on the screen.
 
 ## Building
 
-If you want to try out the cutting-edge features, you can build with the following commands. (Java 1.8 is required to build the master branch)
+If you want to try out the cutting-edge features, you can build with the following commands. \(Java 1.8 is required to build the master branch\)
 
-```
+```text
   mvn clean install
 ```
 
 ## Contact
 
-* Mailing list: 
+* Mailing list:
   * dev list: for dev/user discussion. [subscribe](mailto:dev-subscribe@dubbo.apache.org), [unsubscribe](mailto:dev-unsubscribe@dubbo.apache.org), [archive](https://lists.apache.org/list.html?dev@dubbo.apache.org),  [guide](https://github.com/apache/dubbo/wiki/Mailing-list-subscription-guide)
-  
 * Bugs: [Issues](https://github.com/apache/dubbo/issues/new?template=dubbo-issue-report-template.md)
 * Gitter: [Gitter channel](https://gitter.im/alibaba/dubbo) 
 * Twitter: [@ApacheDubbo](https://twitter.com/ApacheDubbo)
 
 ## Contributing
 
-See [CONTRIBUTING](https://github.com/apache/dubbo/blob/master/CONTRIBUTING.md) for details on submitting patches and the contribution workflow.
+See [CONTRIBUTING](https://github.com/apache/dubbo/blob/master/CONTRIBUTING.md) for details on submitting patches and the contribution workflow.
 
 ### How can I contribute?
 
@@ -211,7 +202,7 @@ See [CONTRIBUTING](https://github.com/apache/dubbo/blob/master/CONTRIBUTING.md)
 
 ## Reporting bugs
 
-Please follow the [template](https://github.com/apache/dubbo/issues/new?template=dubbo-issue-report-template.md) for reporting any issues.
+Please follow the [template](https://github.com/apache/dubbo/issues/new?template=dubbo-issue-report-template.md) for reporting any issues.
 
 ## Reporting a security vulnerability
 
@@ -236,4 +227,5 @@ Please report security vulnerability to [us](mailto:security@dubbo.apache.org) p
 
 ## License
 
-Apache Dubbo is under the Apache 2.0 license. See the [LICENSE](https://github.com/apache/dubbo/blob/master/LICENSE) file for details.
+Apache Dubbo is under the Apache 2.0 license. See the [LICENSE](https://github.com/apache/dubbo/blob/master/LICENSE) file for details.
+
